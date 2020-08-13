@@ -291,6 +291,7 @@ template {
 }
 
 .fa {
+    display: inline-table;
     font: 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
