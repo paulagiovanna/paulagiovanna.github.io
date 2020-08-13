@@ -4932,8 +4932,8 @@ a img {
 
 @media only screen and (min-width:550px) {
     .header-icons .icon {
-        width: 35px;
-        height: 35px;
+        width: 15px;
+        height: 15px;
         font-size: 35px
     }
 }
