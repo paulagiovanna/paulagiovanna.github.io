@@ -5056,7 +5056,7 @@ a img {
 
     .contents,
     .contents-right {
-        margin-top: -5%
+       /* margin-top: -5% */
     }
 
     .contents-right,
