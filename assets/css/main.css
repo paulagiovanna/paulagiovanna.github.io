@@ -5083,9 +5083,9 @@ a img {
     display: inline-block;
     margin: 10px 0;
     padding: 5px;
-    color: #1488CC;
+    color: #008B8B;
     background-color: transparent;
-    border: 1px solid #1488CC;
+    border: 1px solid #008B8B;
     border-radius: 10px;
     text-align: center;
     outline: 0;
@@ -5096,8 +5096,8 @@ a img {
 
 .project-link:active,
 .project-link:hover {
-    background-color: #5347a8;
-    border-color: #5347a8;
+    background-color: #008B8B;
+    border-color: #008B8B;
     color: #fff;
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
 }
