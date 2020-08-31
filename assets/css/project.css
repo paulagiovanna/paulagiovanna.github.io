@@ -13,7 +13,7 @@
 }
 
 .project_header .site-title{
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   font-family: inherit;
   font-weight: 500;
@@ -22,7 +22,7 @@
 }
 
 .project_header .site-description{
-  font-size: 20px;
+  font-size: 12px;
   text-align: center;
   margin-top: 10px;
   color: #fff;
