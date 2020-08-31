@@ -5124,3 +5124,9 @@ a img {
     margin: 0;
     color: #fff
 }
+
+@media screen and (max-width: 480px) {
+      #carouselExampleIndicators {
+             width:60%;
+       }
+}
