@@ -1,14 +1,7 @@
 .project_header {
-    z-index: 1;
     text-align: center;
-    position: absolute;
     font-family: 'Rubik', sans-serif;
     color: #fff;
-    width: 100%;
-    left: 50%;
-    margin: 0 auto;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     background: linear-gradient(to right, #000000, #008B8B);
 }
 
