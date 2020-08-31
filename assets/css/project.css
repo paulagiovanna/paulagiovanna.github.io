@@ -1,11 +1,26 @@
-.site-title{
+.header {
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #000000, #008B8B);
+}
+
+.project_header .site-title{
   font-size: 80px;
   text-align: center;
   font-family: inherit;
   font-weight: 500;
 }
 
-.site-description{
+.project_header .site-description{
   font-size: 20px;
   text-align: center;
   margin-top: 10px;
