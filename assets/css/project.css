@@ -11,13 +11,13 @@
   font-family: inherit;
   font-weight: 500;
   color: #fff;
+  margin-bottom: 10px;
   display: block;
 }
 
 .project_header .site-description{
   font-size: 12px;
   text-align: center;
-  margin-top: 10px;
   color: #fff;
   display: block;
 }
