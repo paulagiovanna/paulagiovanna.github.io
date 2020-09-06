@@ -5051,7 +5051,7 @@ a img {
 @media only screen and (min-width:550px) {
     .contents {
         margin-left: 0;
-        width: 60%
+        width: 48%
     }
 
     .contents,
@@ -5062,7 +5062,7 @@ a img {
     .contents-right,
     .images-right {
         float: right;
-        width: 48%
+        width: 60%
     }
 
     .images-right img {
