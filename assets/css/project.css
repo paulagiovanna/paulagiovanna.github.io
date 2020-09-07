@@ -58,21 +58,21 @@
 @media only screen and (min-width:550px) {
     .graph-right {
         float: right;
-        width: 60%
+        width: 65%
     }
 
     .graph-left {
         float: left;
-        width: 60%
+        width: 65%
     }
 
     .contents-graph-right{
         float: right;
-        width: 38% 
+        width: 35% 
     }
 
     .contents-graph-left{
         float: left;
-        width: 38% 
+        width: 35% 
     }
 }

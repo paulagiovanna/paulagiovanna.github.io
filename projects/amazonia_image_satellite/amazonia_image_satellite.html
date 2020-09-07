@@ -63,11 +63,11 @@
         </div>
 
         <div class="contents-graph-left">
-          <p style="text-align: justify; margin: 0px">
-            The 17 labels aren't well distributed, Figure 2 shows the discrepancy among labels quantity. While 'primary' has appered in almost every image in our image set, labels such as 'artisinal mine', 'blooming', 'slash and burn', 'blow down' and 'conventional mine' when added together don't even represent 5% of image labels.
+          <p style="text-align: justify;">
+            The 17 labels aren't well distributed, Figure 2 shows the discrepancy among labels quantity. While 'primary' has appered in almost every image in our image set, labels such as 'artisinal mine', 'blooming', 'slash and burn', 'blow down' and 'conventional mine' when added together don't even represent 5% of image labels, because of this from now on I will call them 'interest classes'.
           </p>
         </div>
-        <div class="graph-right">
+        <div class="graph-right" style="margin-top: 15px">
           <img
           alt="Labels Distribuition"
           src="./distrib.PNG"
@@ -79,13 +79,13 @@
         </div>
 
         <div>
-          <p style="text-align: justify;">
-            Due to the low number of some labels a search for something that could compensate it became necessary. Figure 3 shows the correlation between labels, i.e the percentile of images labeled on X class that also have the label Y. As we can see, the graph isn't mirrored, i.e a big number of appearance of a class with another  doesn't make the opposite true. We can see some obvious correlations like 'primary' with almost every other classes - once 'primary' appears in almost all images that is a thing that we could predict -  but we also can se some interesting correlations, like the high percentile of correlation between 'artisinal mine' and 'water', 'conventional mine' and 'road' and 'slash and burn' with 'agriculture' and 'cultivation'. This correlations are interesting because they can help us to compensate the lack of examples that we have to give to the deep learning networks.    
+          <p style="text-align: justify; margin: 0px">
+            Due to the low number of our interest classes a search for something that could compensate it became necessary. Figure 3 shows the correlation between labels, i.e the percentile of images labeled on X class that also have the label Y. As we can see, the graph isn't mirrored, i.e a big number of appearance of a class with another  doesn't make the opposite true. We can see some obvious correlations like 'primary' with almost every other classes - once 'primary' appears in almost all images that is a thing that we could predict -  but we also can se some interesting correlations, like the high percentile of correlation between 'artisinal mine' and 'water', 'conventional mine' and 'road' and 'slash and burn' with 'agriculture' and 'cultivation'. This correlations are interesting because they can help us to compensate the lack of examples that we have to give to the deep learning networks.    
           </p>
         </div>
 
-        <div class="graph-left" style="width: 65%">
-          <img 
+        <div class="graph-left">
+          <img style="margin-top: 25px" 
           alt="Labels Correlation"
           src="./correlation.png"
           />
@@ -97,21 +97,22 @@
 
         <div>
           <p style="text-align: justify;">
-            In order to explore more the relationships that could be helpful for deeplearning networks, the graph in Figure 4 was created. Each node represents a label - excluding weather condition labels - and each edge represents one time that two labels appeared together - bold edges means that two labels appears together in a large set of images whereas if two nodes don't have an edge, so their labels never appeared together. 
+            In order to explore more the relationships that could be helpful for the finding of our interests classes by the deeplearning networks, the graph in Figure 4 was created. Each node represents a label - excluding weather condition labels - and each edge represents how many times two labels appeared together - strong edges means that two labels appears together in a large set of images, whereas weak edges represents that two labels almost never appeared together. As we can se, our interest classes have less strong edges than the other classes. From that we could think that a set of other labels, that our interest class have a strong edge, can define if it will appear at the image.  
           </p>
-        </div>      
+        </div>    
+        <div class="graph-right">
+          <img
+          alt="Results Graph"
+          src="./grafo_labels.png"
+          />
+        </div>  
 <!--
-      <div class="images-right">
-        <img
-        alt="Results Graph"
-        src="./fbetaxtempo_clasf.png"
-        />
-      </div>
-      <div class="contents-left" style="text-align: center;">
-        <p style="text-align: justify;">
-          Description.
-        </p>
-      </div>
+  <div style="text-align: center">
+          <img
+          alt="Results Graph"
+          src="./fbetaxtempo_clasf.png"
+          />
+        </div>
 -->
   </div>
   </section>
