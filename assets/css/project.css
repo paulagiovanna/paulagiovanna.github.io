@@ -29,6 +29,31 @@
     margin: auto;
 }
 
+.part-project {
+    margin: 20px 0
+}
+
+.part-project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+.part-project h5 {
+    margin: 0
+}
+
+.part-project li {
+    color: #1488CC;
+    font-size: 1.1rem
+}
+
+.part-project p {
+    margin-right: 5px
+}
+
+
+
 
 @media only screen and (min-width:550px) {
     .graph-right {
