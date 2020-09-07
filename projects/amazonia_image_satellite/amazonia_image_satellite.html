@@ -100,12 +100,92 @@
             In order to explore more the relationships that could be helpful for the finding of our interests classes by the deeplearning networks, the graph in Figure 4 was created. Each node represents a label - excluding weather condition labels - and each edge represents how many times two labels appeared together - strong edges means that two labels appears together in a large set of images, whereas weak edges represents that two labels almost never appeared together. As we can se, our interest classes have less strong edges than the other classes. From that we could think that a set of other labels, that our interest class have a strong edge, can define if it will appear at the image.  
           </p>
         </div>    
-        <div class="graph-right">
-          <img
+        <div style="text-align: center;">
+          <img style="width: 65%;" 
           alt="Results Graph"
           src="./grafo_labels.png"
           />
+          <p style="text-align: center; margin: 0px">
+            Figure 4 - Labels correlation graph <br>
+            Source: Own autorship
+          </p>
         </div>  
+
+        <div>
+          <p style="text-align: justify;"> 
+            The Figure 5 presents the analysis about if a set of strong edges could define if a interest class will or not appear in some image. As we can see despite of exists, this definition is still weak. The class with greater possibility of being described by another ones was 'artisinal mine' and it's biggest possibility of description was 28.13% what isn't neither the a half of number of appearness of this class on the image set.
+          </p>
+        </div>  
+
+        <div class="size-by-size-graphs">
+          <img
+          alt="Artisinal mine top 5"
+          src="./artisinal_mine_top5.png"
+          />
+          <p style="text-align: center; margin: 0px">
+            (a) - Artisinal mine top 5
+          </p>
+        </div>
+
+
+        <div class="size-by-size-graphs">
+          <img
+          alt="Conventional mine top 5"
+          src="./conventional_mine_top5.png"
+          />
+          <p style="text-align: center; margin: 0px">
+            (b) - Conventional mine top 5
+          </p>
+        </div>
+
+
+        <div class="size-by-size-graphs">
+          <img
+          alt="Selective logging top 5"
+          src="./selective_logging_top5.png"
+          />
+          <p style="text-align: center; margin: 0px">
+            (c) - Selective logging top 5
+          </p>
+        </div>
+
+
+        <div class="size-by-size-graphs">
+          <img
+          alt="Blooming top 5"
+          src="./blooming_top5.png"
+          />
+          <p style="text-align: center; margin: 0px">
+            (d) - Blooming top 5 
+          </p>
+        </div>
+
+
+        <div class="size-by-size-graphs">
+          <img
+          alt="Slash and burn top 5"
+          src="./slash_burn_top5.png"
+          />
+          <p style="text-align: center; margin: 0px">
+            (e) - Slash and burn top 5
+          </p>
+        </div>
+
+
+        <div class="size-by-size-graphs">
+          <img
+          alt="Blow down Graph"
+          src="./blow_down_top5.png"
+          />
+          <p style="text-align: center; margin: 0px">
+            (f) - Blow down top 5
+          </p>
+        </div>
+
+        <p style="text-align: center; margin: 0px">
+            Figure 5 - Top 5 strong edges combination for interest classes. <br>
+            Source: Own autorship
+        </p>
 <!--
   <div style="text-align: center">
           <img

@@ -53,7 +53,10 @@
 }
 
 
-
+.size-by-size-graphs {
+  display: inline-block;
+  width: 49%
+}
 
 @media only screen and (min-width:550px) {
     .graph-right {
