@@ -52,12 +52,14 @@
         </p>
       </div>
       <div>
-          <img
+          <p style="text-align: center">
+            Figure 1 - Chips and their labels
+          </p>
+          <img 
           alt="Image Labels"
           src="./class_labels.jpg"
           />
           <p style="text-align: center; margin: 0px">
-            Figure 1 - Chips and their labels <br>
             Source: Kaggle
           </p>
         </div>
@@ -68,12 +70,14 @@
           </p>
         </div>
         <div class="graph-right" style="margin-top: 15px">
+          <p style="text-align: center;">
+            Figure 2 - Labels distribution
+          </p>
           <img
           alt="Labels Distribuition"
           src="./distrib.PNG"
           />
           <p style="text-align: center; margin: 0px">
-            Figure 2 - Labels distribution <br>
             Source: Own autorship
           </p>
         </div>
@@ -85,12 +89,14 @@
         </div>
 
         <div class="graph-left">
+          <p style="text-align: center;">
+            Figure 3 - Labels correlation map
+          </p>
           <img style="margin-top: 25px" 
           alt="Labels Correlation"
           src="./correlation.png"
           />
            <p style="text-align: center; margin: 0px">
-            Figure 3 - Labels correlation map <br>
             Source: Own autorship
           </p>
         </div>
@@ -99,101 +105,207 @@
           <p style="text-align: justify;">
             In order to explore more the relationships that could be helpful for the finding of our interests classes by the deeplearning networks, the graph in Figure 4 was created. Each node represents a label - excluding weather condition labels - and each edge represents how many times two labels appeared together - strong edges means that two labels appears together in a large set of images, whereas weak edges represents that two labels almost never appeared together. As we can se, our interest classes have less strong edges than the other classes. From that we could think that a set of other labels, that our interest class have a strong edge, can define if it will appear at the image.  
           </p>
-        </div>    
-        <div style="text-align: center;">
+        </div>
+        <br>
+        <div style="text-align: center;">    
+        <p>
+            Figure 4 - Labels correlation graph
+          </p>
           <img style="width: 65%;" 
           alt="Results Graph"
           src="./grafo_labels.png"
           />
           <p style="text-align: center; margin: 0px">
-            Figure 4 - Labels correlation graph <br>
             Source: Own autorship
           </p>
         </div>  
 
         <div>
           <p style="text-align: justify;"> 
-            The Figure 5 presents the analysis about if a set of strong edges could define if a interest class will or not appear in some image. As we can see despite of exists, this definition is still weak. The class with greater possibility of being described by another ones was 'artisinal mine' and it's biggest possibility of description was 28.13% what isn't neither the a half of number of appearness of this class on the image set.
+            The Figure 5 presents the analysis about if a set of strong edges could define if a interest class will or not appear in some image. Here we get the 5 strongest edges of each interest class and combine them in order to find the best combination as possible. As we can see, despite of exists, this definition is still weak. The class with greater possibility of being described by another ones was 'artisinal mine' and it's biggest possibility of description was 28.13% what isn't neither a half of number of appearness of this class on the image set.
           </p>
         </div>  
 
+        <p style="text-align: center">
+            Figure 5 - Top 5 strong edges combination for interest classes.
+        </p>
         <div class="size-by-size-graphs">
+          <p style="text-align: center; margin: 0px">
+            (a) - Artisinal mine top 5
+          </p>
           <img
           alt="Artisinal mine top 5"
           src="./artisinal_mine_top5.png"
           />
-          <p style="text-align: center; margin: 0px">
-            (a) - Artisinal mine top 5
-          </p>
         </div>
 
 
         <div class="size-by-size-graphs">
-          <img
+          <p style="text-align: center; margin: 0px">
+            (b) - Conventional mine top 5
+          </p><img
           alt="Conventional mine top 5"
           src="./conventional_mine_top5.png"
           />
-          <p style="text-align: center; margin: 0px">
-            (b) - Conventional mine top 5
-          </p>
         </div>
 
 
         <div class="size-by-size-graphs">
+          <p style="text-align: center; margin: 0px">
+            (c) - Selective logging top 5
+          </p>
           <img
           alt="Selective logging top 5"
           src="./selective_logging_top5.png"
           />
-          <p style="text-align: center; margin: 0px">
-            (c) - Selective logging top 5
-          </p>
         </div>
 
 
         <div class="size-by-size-graphs">
+          <p style="text-align: center; margin: 0px">
+            (d) - Blooming top 5 
+          </p>
           <img
           alt="Blooming top 5"
           src="./blooming_top5.png"
           />
-          <p style="text-align: center; margin: 0px">
-            (d) - Blooming top 5 
-          </p>
         </div>
 
 
-        <div class="size-by-size-graphs">
+        <div class="size-by-size-graphs">          
+          <p style="text-align: center; margin: 0px">
+            (e) - Slash and burn top 5
+          </p>
           <img
           alt="Slash and burn top 5"
           src="./slash_burn_top5.png"
           />
-          <p style="text-align: center; margin: 0px">
-            (e) - Slash and burn top 5
-          </p>
         </div>
 
 
         <div class="size-by-size-graphs">
+          <p style="text-align: center; margin: 0px">
+            (f) - Blow down top 5
+          </p>
           <img
           alt="Blow down Graph"
           src="./blow_down_top5.png"
           />
-          <p style="text-align: center; margin: 0px">
-            (f) - Blow down top 5
-          </p>
         </div>
 
         <p style="text-align: center; margin: 0px">
-            Figure 5 - Top 5 strong edges combination for interest classes. <br>
+          Source: Own autorship
+        </p>
+
+        <div>
+          <p style="text-align: justify;">
+            Five deeplearning networks were used to this problem: VGG16, ResNet50, InceptionV3, MobileNet and MobileNetV2. Table 1 shows the results of these networks on the validation set, it is sort by the number of appearness of the label in the validation set. Despite of don't represent neither 0,15% of the validation set the label 'conventional mine' wasn't ignored by four of the five networks, we can explain this with the correlations shown at Figure 5. 
+          </p>
+        </div>
+
+
+        <p style="text-align: center">
+            Table 1 - Validation set results.
+        </p>
+        <div style="overflow: auto">
+          <table class="table table-hover table-dark">
+          <tr><th>Label</th><th>VGG16</th><th>ResNet50</th><th>InceptionV3</th><th>MobileNet</th><th>MobileNetV2</th></tr>
+          <tr><td>Conventional mine</td><td>38.0%</td><td>12.0%</td><td>25.0%</td><td>12.0%</td><td>0.0%</td></tr>
+          <tr><td>Blow down</td><td>0.0%</td><td>23.0%</td><td>0.0%</td><td>15.0%</td><td>0.0%</td></tr>
+          <tr><td>Slash and burn</td><td>3.0%</td><td>3.0%</td><td>5.0%</td><td>5.0%</td><td>0.0%</td></tr>
+          <tr><td>Blooming</td><td>38.0%</td><td>8.0%</td><td>26.0%</td><td>18.0%</td><td>0.0%</td></tr>
+          <tr><td>Selective logging</td><td>29.0%</td><td>33.0%</td><td>20.0%</td><td>13.0%</td><td>0.0%</td></tr>
+          <tr><td>Artisinal mine</td><td>69.0%</td><td>57.0%</td><td>59.0%</td><td>73.0%</td><td>6.0%</td></tr>
+          <tr><td>Bare ground</td><td>36.0%</td><td>19.0%</td><td>24.0%</td><td>21.0%</td><td>2.0%</td></tr>
+          <tr><td>Clody</td><td>94.0%</td><td>90.0%</td><td>91.0%</td><td>68.0%</td><td>85.0%</td></tr>
+          <tr><td>Haze</td><td>78.0%</td><td>65.0%</td><td>79.0%</td><td>83.0%</td><td>11.0%</td></tr>
+          <tr><td>Habitation</td><td>79.0%</td><td>69.0%</td><td>71.0%</td><td>61.0%</td><td>5.0%</td></tr>
+          <tr><td>Cultivation</td><td>72.0%</td><td>52.0%</td><td>57.9%</td><td>56.9%</td><td>9.0%</td></tr>
+          <tr><td>Water</td><td>85.0%</td><td>77.0%</td><td>81.0%</td><td>86.0%</td><td>68.0%</td></tr>
+          <tr><td>Partly cloudy</td><td>97.0%</td><td>92.0%</td><td>89.0%</td><td>89.0%</td><td>46.0%</td></tr>
+          <tr><td>Road</td><td>86.0%</td><td>86.0%</td><td>85.0%</td><td>82.0%</td><td>37.0%</td></tr>
+          <tr><td>Agriculture</td><td>95.0%</td><td>82.0%</td><td>87.0%</td><td>87.0%</td><td>13.0%</td></tr>
+          <tr><td>Clear</td><td>98.0%</td><td>98.0%</td><td>98.0%</td><td>98.0%</td><td>98.0%</td></tr>
+          <tr><td>Primary</td><td>99.0%</td><td>99.0%</td><td>100.0%</td><td>100.0%</td><td>99.0%</td></tr>
+          </table>
+        </div>
+        <p style="text-align: center; margin: 0px">
             Source: Own autorship
         </p>
-<!--
+
+      <div>
+          <p style="text-align: justify;">
+            Table 2 shows the networks results on blind test - fbeta - and the time that the network spent classifying the 60,000 images of test set. We can see that it is align with the results at validation set. 
+          </p>
+      </div> 
+
+      <p style="text-align: center">
+            Table 2 - Networks performance on blind tests.
+        </p>
+        <div style="overflow: auto">
+          <table class="table table-hover table-dark">
+            <tr><th>Network</th><th>Fbeta</th><th>Sec.</th></tr>
+            <tr><td>VGG16</td><td>91,79%</td><td>97,21</td></tr>
+            <tr><td>ResNet50</td><td>89,89%</td><td>122,3</td></tr>
+            <tr><td>InceptionV3</td><td>89,94%</td><td>105</td></tr>
+            <tr><td>MobileNet</td><td>88,93%</td><td>74,6</td></tr>
+            <tr><td>MobileNetV2</td><td>72,75%</td><td>70,92</td></tr>    
+          </table>
+          <p style="text-align: center; margin: 0px">
+            Source: Own autorship
+        </p>
+      </div>
+
+      <div>
+          <p style="text-align: justify;">
+            After the tests with the individual networks, some tests with ensembles of these networks were realized. Table 3 shows the performance of these esambles. This table is sort descending by Fbeta. The first thing that catchs our attention is that the best Fbeta among the ensambles - ensemble 05 - is very close from Fbeta of VGG16 alone - a difference of 0.31 percentual points. It can means that the networks found the same patterns on the classes so they can't do a big contribution to each other. 
+            <br>
+            Another finding that this table provide to us is about the influence of the votes number. The votes systems that had an 'unanimous' policy - 'ensemble 03', 'ensemble 07' and 'ensemble 12' - had the worst performance  losing to 4 of the 5 individual networks. On the other hand, in the votes systems that had a big freedom degree, with just need one vote, the Fbeta was dependent of the networks that composed the ensemble. We can see that when we put together the 3 bests networks - 'ensemble 01' - their mistakes didn't affect significantly the Fbeta, but when we add worsts networks - 'mobileNet' and 'mobilenetV2'- to this ensemble - 'ensemble 08' - their mistakes affected too mutch the Fbeta and it's performance was worst than 4 of the 5 individual networks.             
+          </p>
+      </div> 
+
+      <p style="text-align: center">
+            Table 3 - Ensembles performance on blind tests.
+        </p>
+        <div style="overflow: auto">
+          <table class="table table-hover table-dark">
+            <tr><td>Ensemble</td><td>Networks</td><td>Votes</td><td>Fbeta</td><td>Sec.</td></tr>
+            <tr><td>05</td><td>VGG16+ResNet50+InceptionV3+MobileNet</td><td>>=2</td><td>92,10%</td><td>300,2</td></tr>
+            <tr><td>09</td><td>VGG16+Resnet50+InceptionV3+MobileNet+MobileNetV2</td><td>>=2</td><td>91,80%</td><td>347,7</td></tr>
+            <tr><td>01</td><td>VGG16+ResNet50+InceptionV3</td><td>>=1</td><td>91,72%</td><td>222,7</td></tr>
+            <tr><td>02</td><td>VGG16+ResNet50+InceptionV3</td><td>>=2</td><td>91,63%</td><td>241,8</td></tr>
+            <tr><td>10</td><td>VGG16+Resnet50+InceptionV3+MobileNet+MobileNetV2</td><td>>=3</td><td>91,07%</td><td>364,9</td></tr>
+            <tr><td>04</td><td>VGG16+ResNet50+InceptionV3+MobileNet</td><td>>=1</td><td>90,90%</td><td>296,8</td></tr>
+            <tr><td>06</td><td>VGG16+ResNet50+InceptionV3+MobileNet</td><td>>=3</td><td>90,73%</td><td>290,9</td></tr>
+            <tr><td>11</td><td>VGG16+Resnet50+InceptionV3+MobileNet+MobileNetV2</td><td>>=4</td><td>88,10%</td><td>381,6</td></tr>
+            <tr><td>03</td><td>VGG16+ResNet50+InceptionV3</td><td>>=3</td><td>88,03%</td><td>325,6</td></tr>
+            <tr><td>08</td><td>VGG16+Resnet50+InceptionV3+MobileNet+MobileNetV2</td><td>>=1</td><td>86,73%</td><td>378,1</td></tr>
+            <tr><td>07</td><td>VGG16+ResNet50+InceptionV3+MobileNet</td><td>>=4</td><td>86,20%</td><td>282,1</td></tr>
+            <tr><td>12</td><td>VGG16+Resnet50+InceptionV3+MobileNet+MobileNetV2</td><td>>=5</td><td>73,96%</td><td>373,1</td></tr>
+          </table>
+          <p style="text-align: center; margin: 0px">
+            Source: Own autorship
+        </p>
+        </div>
+
+        <div>
+          <p style="text-align: justify;"> 
+            Finally, the Figure 6 presents a performance comparation - based on the time in seconds that each network spent to classify the tests set and the Fbeta obtained at blind tests - of all approaches used. We can see that among all of our options VGG16 was the best cost benefit.
+          </p>
+        </div>  
+
   <div style="text-align: center">
+    <p style="text-align: center">
+            Figure 6 - Performances comparation.
+        </p>
           <img
-          alt="Results Graph"
+          alt="Fbeta x classification time"
           src="./fbetaxtempo_clasf.png"
           />
+          <p style="text-align: center; margin: 0px">
+            Source: Own autorship
+        </p>
         </div>
--->
   </div>
   </section>
   <footer class="footer">
